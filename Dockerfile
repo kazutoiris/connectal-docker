@@ -41,4 +41,7 @@ RUN wget https://github.com/WangXuan95/BSV_Tutorial_cn/raw/main/bsvbuild.sh && \
     chmod +x bsvbuild.sh && \
     mv bsvbuild.sh /opt/bsc/bin
 
+RUN useradd -ms /bin/bash ubuntu
+USER ubuntu
+
 CMD [ "bash" ]
